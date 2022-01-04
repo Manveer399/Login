@@ -1,5 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(300deg, #b8c6db 0%, #f5f7fa 74%);
+}
+
+form {
+  border: 2px hidden;
+  border-radius: 10px;
+  width: fit-content;
+  height: 60vh;
+  padding: 1.5rem;
+  margin: 8rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ghostwhite;
+  box-shadow: -12px 11px 49px 6px rgba(0, 0, 0, 0.39);
+}
+
+.login-title h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login {
+  margin-bottom: 0.3rem;
+}
+
+div.login input,
+button {
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  border-style: hidden;
+  outline: none;
+}
+
+div.login input {
+  padding-left: 0.5rem;
+}
+.login-button {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+h5 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.login-options button {
+  margin-bottom: 0.3rem;
+  height: 40px;
+  width: 300px;
+  border-radius: 3px;
+  border-style: hidden;
+  background-color: gainsboro;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+
+.login-button:hover {
+  background-color: grey;
+}
+
+.login-options button:hover {
+  background-color: ghostwhite;
+}
+
+img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 4rem;
+  top: 0.7rem;
+}
+
+.other-options {
+  margin-top: 3rem;
+}
+
+.other-options ul {
+  display: flex;
+}
+
+.other-options ul li {
+  margin-left: 1.3rem;
+}
+.other-options ul li a {
+  text-decoration: none;
+}
+
+.other-options ul li.cannot-login {
+  list-style: none;
+}
+
+.other-options ul li.already-account a span {
+  position: relative;
+  left: -0.5rem;
+}
+
+.other-options ul li a:hover {
+  text-decoration: underline;
+  color: darkslateblue;
 }
